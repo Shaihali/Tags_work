@@ -1,0 +1,15 @@
+.badge {
+  align-items: center;
+  height: 25px;
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+
+.label {
+  text-transform: none;
+}
+
+.text {
+  font-size: var(--font-size-s);
+  font-weight: 500;
+}

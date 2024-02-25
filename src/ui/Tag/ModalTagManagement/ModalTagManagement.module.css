@@ -1,0 +1,26 @@
+.item {
+  background-color: var(--mantine-color-body);
+  display: flex;
+  flex-direction: column;
+}
+
+.item_select {
+  background-color: var(--mantine-color-gray-2);
+}
+
+.dragHandle {
+  width: rem(18px);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
+}
+
+.boxColor_swatch {
+  border-radius: 50%;
+}
+.boxColor_swatch_active {
+  border: 2px solid;
+  padding: 1px;
+}

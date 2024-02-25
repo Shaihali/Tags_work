@@ -9,16 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hello-pangea/dnd": "^16.5.0",
+    "@mantine/core": "^7.5.3",
+    "@mantine/hooks": "^7.5.3",
+    "@mantine/modals": "^7.5.3",
+    "@tabler/icons-react": "^2.47.0",
+    "@tanstack/react-query": "^5.22.2",
+    "axios": "^1.6.7",
+    "clsx": "^2.1.0",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tanstack/eslint-plugin-query": "^5.20.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.8",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8.4.35",
+    "postcss-preset-mantine": "^1.13.0",
+    "postcss-simple-vars": "^7.0.1",
+    "typescript": "^5"
   }
 }
