@@ -34,7 +34,7 @@ export const TagItem: FC<TagItemProps> = ({
         )
       }
     >
-      <Text truncate="end" className={classes.text} fz={14}>
+      <Text truncate={truncate && "end"} className={classes.text} fz={14}>
         {label}
       </Text>
     </Badge>

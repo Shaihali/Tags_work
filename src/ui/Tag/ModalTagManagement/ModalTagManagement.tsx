@@ -236,16 +236,18 @@ export const ModalTagManagement: FC<ModalTagManagementProps> = ({
   };
 
   const updateTag = useMutation({
-    mutationFn: async (body) => await axios.patch("api/tag", body),
+    mutationFn: async (body: Tag) => await axios.patch("api/tag", body),
   });
   const handleCloseModal = () => {
     close();
     if (editTagName && selectedColor) {
       updateTag
         .mutateAsync({
-          ...selectedTag,
+          ...(selectedTag || {}),
           name: editTagName,
           color: selectedColor,
+          id: selectedTag?.id || "",
+          order: selectedTag?.order || 0,
         })
         .then(() => queryClient.invalidateQueries({ queryKey: ["tags"] }));
     }
